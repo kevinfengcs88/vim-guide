@@ -53,3 +53,34 @@ Vim Tutor is just some simple text that is designed to teach its user about Vim 
 5. Once installation is complete, open a terminal and type this command: `vimtutor`
 
 You should now be looking at Vim Tutor's text in gVim. The rest is self-explanatory. Follow the tutorial, and make sure you don't just read the content, actually *do* the content! Though I'd like to give a brief overview of the individual lessons in Vim Tutor, I think that it's best to let the material speak for itself. Make sure to do the parts of the tutorial that make you perform commands beyond the gVim client as well (saving files with Vim)! Besides, the fact that Vim Tutor includes countless emphases on learning by *doing* rather than memorization only affirms how important it is to work through the tutorial entirely.
+
+## More Vim Commands
+
+Now I know that you can find every single Vim command that exists just by doing a quick Google search, so I'm not going to be redundant here by listing all of those commands. Instead, I'm going to list some more advanced commands that I've found to be very useful thus far. Extending beyond those initial commands that I listed is important, although becoming a complete expert on absolutely everything that Vim can do is probably unnecessary. I would only pursue becoming a Vim expert out of passion, rather than pursuit of efficacy.
+
+- `$` : Jump to the end of the line
+- `A` : Jump to the end of the line and enter insert mode on the right side of the readonly highlight
+- `0` : Jump to the start of the line
+- `I` : Jump to the start of the line and enter insert mode on the left side of the readonly highlight
+- `gg` : Jump to the start of the file
+- `G` : Jump to the end of the file
+- `yy` : Copy the current line to Vim register
+- `p` : Go down one line and paste from Vim register
+- `P` : Paste on current line from Vim register
+- `v` : Enter visual mode (select)
+- `V` : Enter visual line mode (select entire lines)
+- `e` : Skip to next word
+- `{` : Go back one section (Vim finds blank lines)
+- `}` : Go forward one section
+- `x` : Delete current character
+- `d` : Delete command, can be combined with numbers and motions (for example, `d2e` deletes the next two words), most commonly used after selecting a chunk of text, also saves to Vim register
+- `dd` : Delete current line and save it to Vim register
+
+
+- `i` : Enter insert mode on the left side of the readonly highlight
+- `a` : Enter insert mode on the right side of the readonly highlight
+- `CTRL + C` : Exit insert mode (the main command is `ESC`, but as programmers, hitting the "copy" macro is already hard-wired into our brains, so why not stick with that one?)
+- `j` : Go down one line
+- `k` : Go up one line
+- `l` : Go right one character
+- `h` : Go left one character
