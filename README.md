@@ -11,7 +11,7 @@ To get started, install the extension. And...you're pretty much done! From here,
 - Hit `ENTER` if the option to open `keybindings.json` is already selected
 - Otherwise, use the down arrow key as many times as necessary to select it
 
-Congratulations! You're on your way to becoming a true keyboard warrior. But not *that* type of keyboard warrior. I'd strongly advise against having virtual arguments with strangers on the internet over social media platforms. Trust me. Now that we've gotten to the `keybindings.json` file, let's enable "tab" functionality for readonly mode while in Vim. You've probably already noticed how your normal cursor in VS Code has disappared, only to be transformed into a blinking highlight, like those found in terminals. Since this is a guide to Vim, I'll be writing up documentation on what I belive to be the most important commands, but for now, here are a few basic ones to get you started (and actually be able to make some changes to `keybindings.json`).
+Congratulations! You're on your way to becoming a true keyboard warrior. But not *that* type of keyboard warrior. I'd strongly advise against having virtual arguments with strangers on the internet over social media platforms. Trust me. Now that we've gotten to the `keybindings.json` file, let's enable "tab" functionality for readonly mode while in Vim. You've probably already noticed how your normal cursor in VS Code has disappared, only to be transformed into a blinking highlight, like those found in terminals. Since this is a guide to Vim, I'll be writing up documentation on what I believe to be the most important commands, but for now, here are a few basic ones to get you started (and actually be able to make some changes to `keybindings.json`).
 
 - `i` : Enter insert mode on the left side of the readonly highlight
 - `a` : Enter insert mode on the right side of the readonly highlight
@@ -52,4 +52,4 @@ Vim Tutor is just some simple text that is designed to teach its user about Vim 
 4. During installation, make sure to check the box that creates `.bat` files
 5. Once installation is complete, open a terminal and type this command: `vimtutor`
 
-You should now be looking at Vim Tutor's text in gVim. The rest is self-explanatory. Follow the tutorial, and make sure you don't just read the content, *do* the content!
+You should now be looking at Vim Tutor's text in gVim. The rest is self-explanatory. Follow the tutorial, and make sure you don't just read the content, actually *do* the content! Though I'd like to give a brief overview of the individual lessons in Vim Tutor, I think that it's best to let the material speak for itself. Make sure to do the parts of the tutorial that make you perform commands beyond the gVim client as well (saving files with Vim)! Besides, the fact that Vim Tutor includes countless emphases on learning by *doing* rather than memorization only affirms how important it is to work through the tutorial entirely.
