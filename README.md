@@ -68,7 +68,7 @@ Now I know that you can find every single Vim command that exists just by doing 
 - `p` : Go down one line and paste from Vim register
 - `P` : Paste on current line from Vim register
 - `v` : Enter visual mode (select)
-- `V` : Enter visual line mode (select entire lines)
+- `V` : Enter visual line mode (select entire lines at a time)
 - `e` : Skip to next word
 - `{` : Go back one section (Vim finds blank lines)
 - `}` : Go forward one section
@@ -76,11 +76,3 @@ Now I know that you can find every single Vim command that exists just by doing 
 - `d` : Delete command, can be combined with numbers and motions (for example, `d2e` deletes the next two words), most commonly used after selecting a chunk of text, also saves to Vim register
 - `dd` : Delete current line and save it to Vim register
 
-
-- `i` : Enter insert mode on the left side of the readonly highlight
-- `a` : Enter insert mode on the right side of the readonly highlight
-- `CTRL + C` : Exit insert mode (the main command is `ESC`, but as programmers, hitting the "copy" macro is already hard-wired into our brains, so why not stick with that one?)
-- `j` : Go down one line
-- `k` : Go up one line
-- `l` : Go right one character
-- `h` : Go left one character
