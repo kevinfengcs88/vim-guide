@@ -15,7 +15,7 @@ Congratulations! You're on your way to becoming a true keyboard warrior. But not
 
 - `i` : Enter insert mode on the left side of the readonly highlight
 - `a` : Enter insert mode on the right side of the readonly highlight
-- `CTRL + C` : Exit insert mode (the main command is `ESC`, but as programmers, hitting the "copy" macro is already hard-wired into our brains, so why not stick with that one?)
+- `CTRL + C` : Exit insert mode (the main command is `ESC`, but since we're programmers, hitting the "copy" macro is already hard-wired into our brains, so why not stick with that one?)
 - `j` : Go down one line
 - `k` : Go up one line
 - `l` : Go right one character
@@ -56,7 +56,7 @@ You should now be looking at Vim Tutor's text in gVim. The rest is self-explanat
 
 ## More Vim Commands
 
-Now I know that you can find every single Vim command that exists just by doing a quick Google search, so I'm not going to be redundant here by listing all of those commands. Instead, I'm going to list some more advanced commands that I've found to be very useful thus far. Extending beyond those initial commands that I listed is important, although becoming a complete expert on absolutely everything that Vim can do is probably unnecessary. I would only pursue becoming a Vim expert out of passion, rather than pursuit of efficacy.
+Now I know that you can find every single Vim command that exists just by doing a quick Google search, so I'm not going to be redundant here by listing all of those commands. Instead, I'm going to list some more commands that I've found to be very useful thus far. Extending beyond those initial commands listed earlier is important, although becoming a complete expert on absolutely everything that Vim can do is probably unnecessary. I would only pursue becoming a complete Vim expert out of passion, rather than out of a pursuit of efficacy.
 
 - `$` : Jump to the end of the line
 - `A` : Jump to the end of the line and enter insert mode on the right side of the readonly highlight
@@ -69,10 +69,20 @@ Now I know that you can find every single Vim command that exists just by doing 
 - `P` : Paste on current line from Vim register
 - `v` : Enter visual mode (select)
 - `V` : Enter visual line mode (select entire lines at a time)
-- `e` : Skip to next word
+- `e` : Skip to the end of the next word
+- `w` : Skip to the beginning of the next word
+- `b` : Skip to the beginning of the previous word
 - `{` : Go back one section (Vim finds blank lines)
 - `}` : Go forward one section
 - `x` : Delete current character
 - `d` : Delete command, can be combined with numbers and motions (for example, `d2e` deletes the next two words), most commonly used after selecting a chunk of text, also saves to Vim register
 - `dd` : Delete current line and save it to Vim register
-
+- `o` : Add a line below the current line and go into insert mode
+- `O` : Add a line above the current line and go into insert mode
+- `gj` : Move down a line in multi-line text
+- `gk` : Move up a line in multi-line text
+- `%` : Toggle between brackets, parentheses, or curly braces when hovering over them
+- `^` : Jump to the first non-blank character of the line
+- `[number]gg` : Jump to line [number] in the file (using `G` after the number also works)
+- `u` : Undo
+- `CTRL + R` : Redo
