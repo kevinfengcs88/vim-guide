@@ -75,7 +75,7 @@ Now I know that you can find every single Vim command that exists just by doing 
 - `{` : Go back one section (Vim finds blank lines)
 - `}` : Go forward one section
 - `x` : Delete current character
-- `d` : Delete command, can be combined with numbers and motions (for example, `d2e` deletes the next two words), most commonly used after selecting a chunk of text, also saves to Vim register
+- `d` : Delete command, can be combined with numbers and motions (for example, `d2e` deletes the next two words), most commonly used after selecting a chunk of text (visual mode), also saves to Vim register
 - `dd` : Delete current line and save it to Vim register
 - `o` : Add a line below the current line and go into insert mode
 - `O` : Add a line above the current line and go into insert mode
@@ -85,4 +85,20 @@ Now I know that you can find every single Vim command that exists just by doing 
 - `^` : Jump to the first non-blank character of the line
 - `[number]gg` : Jump to line [number] in the file (using `G` after the number also works)
 - `u` : Undo
+- `U` : Undo all changes to last changed line
 - `CTRL + R` : Redo
+- `ddp` : Move current line up a line
+- `ddkP` : Move current line down a line 
+- `/[word]<ENTER>` : Search for a word (matching case), use `n` to move forward an instance and `N` to move backward an instance in this search mode
+- `/[word]\c<ENTER>` : Search for a word, ignoring case
+- `r` : Replace a single character
+- `R` : Enter replace mode, replacing characters until <ESC> is inputted (or CTRL + C for that matter)
+
+I probably missed a few important ones, but that's besides the point! You can find all Vim commands just by searching up the function you want in particular or by referring to cheat sheets like this [one](https://vim.rtorr.com/). And don't forget that the best way to familiarize yourself with these commands is to actually use them.
+
+## General tips
+
+What follows are some general "big picture" tips that I've picked up from using Vim.
+
+- **Traverse with big motions first**: When I say "big motions," I mean you shouldn't use small movements like `j` and `k` to traverse through a file when what you're looking for is still quite far away from your cursor. In a 200 line file, there's no reason to press and hold `j` until you reach your desired code that sits on line 187. Instead, use commands that cover "more ground" to start with. They might not be as precise as your directional movement keys, `h`, `j`, `k`, and `l`, but they will save you a lot of time. For the aforementioned scenario, you could start with `G` to skip to line 200, the last line in the file, see that the code you want to edit is around 10 lines above, type `10k` to jump up 10 lines, and then make the final adjustments by hitting `k` 3 times, and then using line traversal commands to get to exactly where you want to be in the line itself. If you are less sure of where you want to go, you should prioritize using commands like `{` and `}` to skip around large chunks of the file rather than `k` and `j`, respectively.
+- **Learn command combos**: This is a bit more complex than learning combos in Super Smash Bros. Melee. To give you an idea of what a useful "command combo" is, imagine that you need to move through a line of words and that a word in the middle of the line is to be edited. How do you get to this word? Well you could very obviously use `h` and `l` (assuming your cursor is already on the correct line) to place your cursor at the start of the word and then use `i` or at the end of the word and then use `a`. Using `h` with `i` is a useful combination. Using `l` with `a` is another useful combination. You could even extend this to using the "word" versions of `h` and `l`. You can go backwards through words with `b` and then use `i` to insert on the left side of the readonly cursor. You can also go forwards through words with `e` and then use `a` to insert on the right side of the readonly cursor. Throw `w` into the mix to go forwards while hitting the starting points of words for even more versatility.
