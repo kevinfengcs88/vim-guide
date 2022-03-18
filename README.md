@@ -111,5 +111,7 @@ What follows are some general "big picture" tips that I've picked up from using 
 Just some additional resources that you might find handy while learning Vim.
 
 [Vim cheat sheet](https://vim.rtorr.com/)
+
 [Fireship's short Vim guide](https://www.youtube.com/watch?v=-txKSRn0qeA)
+
 [Ben Awad's realistic Vim usage](https://www.youtube.com/watch?v=R2pBWDnfJY8)
