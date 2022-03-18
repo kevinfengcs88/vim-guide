@@ -6,3 +6,4 @@ The output looks a little something like this:
 
 ![Spinning donut](https://i.imgur.com/0uCgIsw.gif)
 
+It's best if the .exe is ran in a terminal that does not scroll (otherwise the rendered frames of the donut will not "animate" smoothly in the same spot on your screen).
