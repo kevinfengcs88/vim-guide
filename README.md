@@ -94,7 +94,7 @@ Now I know that you can find every single Vim command that exists just by doing 
 - `/[word]<ENTER>` : Search for a word (matching case), use `n` to move forward an instance and `N` to move backward an instance in this search mode
 - `/[word]\c<ENTER>` : Search for a word, ignoring case
 - `r` : Replace a single character
-- `R` : Enter replace mode, replacing characters until <ESC> is inputted (or CTRL + C for that matter)
+- `R` : Enter replace mode, replacing characters until `<ESC>` is inputted (or CTRL + C for that matter)
 
 I probably missed a few important ones, but that's besides the point! You can find all Vim commands just by searching up the function you want in particular or by referring to cheat sheets like this [one](https://vim.rtorr.com/). And don't forget that the best way to familiarize yourself with these commands is to actually use them.
 
